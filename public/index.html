@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/scripts.js" defer></script>
     <title>Автобусное расписание</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="mb-4">Ближайшее отправление автобусов</h1>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="mb-0">Ближайшее отправление автобусов</h1>
+
+            <div id="current-time-container" class="alert alert-primary d-flex align-items-center p-2 mb-0 gap-2">
+                <span class="bi- bi-clock-fill"></span>
+                <span id="current-time" class="fw-bold"></span>
+            </div>
+        </div>
 
         <table id="bus" class="table table-striped table-bordered">
             <thead>
